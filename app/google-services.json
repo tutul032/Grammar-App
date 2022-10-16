@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "371271232725",
+    "firebase_url": "https://makeordo-48bb7-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "makeordo-48bb7",
+    "storage_bucket": "makeordo-48bb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371271232725:android:31302aa88730dab268c65c",
+        "android_client_info": {
+          "package_name": "com.example.makedogame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371271232725-biaof4k9t8knmm744m28n23ob3jj4lit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU4jsWQOKPeGIP0jH4HBFE9AcYWYq6LsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371271232725-biaof4k9t8knmm744m28n23ob3jj4lit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
