@@ -13,7 +13,7 @@
         android:id="@+id/editTextL"
         android:layout_width="400dp"
         android:layout_height="59dp"
-        android:background="@android:color/darker_gray"
+        android:background="@color/white"
         android:ems="10"
         android:fontFamily="@font/aclonica"
         android:hint="Name"

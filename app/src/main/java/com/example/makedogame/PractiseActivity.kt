@@ -54,7 +54,7 @@ class PractiseActivity : AppCompatActivity() {
 
 
     fun nextPractiseQuestion(view: View){
-        if (practiseQues < 3 /*totalQuesNum*/){
+        if (practiseQues < totalQuesNum){
             practiseQues++
             practiseQuestions()
         }

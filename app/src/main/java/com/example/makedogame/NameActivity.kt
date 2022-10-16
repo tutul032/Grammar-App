@@ -101,18 +101,27 @@ class NameActivity : AppCompatActivity() {
         }, 13000)
 
     }
+    fun startExercise(view: View){
+        val buttonStartPractice: Button = findViewById(R.id.start_practice)
+        buttonStartPractice.setBackgroundColor(Color.RED)
+        talk.speak("Your practice session is going to be started within few seconds, " +
+                "You should press the next button for the next question," +
+            "your practise session starts now, Good luck.", TextToSpeech.QUEUE_FLUSH, null)
+        // delay for the finishing of speech
+        Handler().postDelayed({
+            val intent = Intent(this, PractiseActivity::class.java)
+            startActivity(intent)
+        }, 10000)
+
+    }
 
     fun pastSCExcercise(view: View){
         getData = "PastSimpleCon"
         val buttonPractice: Button = findViewById(R.id.pastSC_practice)
         buttonPractice.setBackgroundColor(Color.GREEN)
-        talk.speak("Thank you very much. You should press the next button for the next question." +
-                "your practise session starts now.", TextToSpeech.QUEUE_FLUSH, null)
-        // delay for the finishing of speech
-        Handler().postDelayed({
-            val intent = Intent(this, PractiseActivity::class.java)
-            startActivity(intent)
-        }, 8000)
+        setContentView(R.layout.activity_tenses_structures)
+        talk.speak("Thank you very much, Here you can have a quick look of all the tense structures with an example," +
+                "Please press the start button to start your practice session", TextToSpeech.QUEUE_FLUSH, null)
 
     }
 
@@ -135,13 +144,9 @@ class NameActivity : AppCompatActivity() {
         getData = "FutureSimpleCon"
         val buttonPractice: Button = findViewById(R.id.futureSC_practice)
         buttonPractice.setBackgroundColor(Color.GREEN)
-        talk.speak("Thank you very much. You should press the next button for the next question." +
-                "your practise session starts now.", TextToSpeech.QUEUE_FLUSH, null)
-        // delay for the finishing of speech
-        Handler().postDelayed({
-            val intent = Intent(this, PractiseActivity::class.java)
-            startActivity(intent)
-        }, 8000)
+        setContentView(R.layout.activity_tenses_structures)
+        talk.speak("Thank you very much, Here you can have a quick look of all the tense structures with an example," +
+                "Please press the start button to start your practice session", TextToSpeech.QUEUE_FLUSH, null)
 
     }
 
@@ -164,14 +169,9 @@ class NameActivity : AppCompatActivity() {
         getData = "PresentSimple"
         val buttonPractice: Button = findViewById(R.id.presentSC_practice)
         buttonPractice.setBackgroundColor(Color.GREEN)
-        talk.speak("Thank you very much. You should press the next button for the next question." +
-                "your practise session starts now.", TextToSpeech.QUEUE_FLUSH, null)
-        // delay for the finishing of speech
-        Handler().postDelayed({
-            val intent = Intent(this, PractiseActivity::class.java)
-            startActivity(intent)
-        }, 8000)
-
+        setContentView(R.layout.activity_tenses_structures)
+        talk.speak("Thank you very much, Here you can have a quick look of all the tense structures with an example," +
+                "Please press the start button to start your practice session", TextToSpeech.QUEUE_FLUSH, null)
     }
 
     fun presentPSC(view: View){
@@ -193,13 +193,9 @@ class NameActivity : AppCompatActivity() {
         getData = "PresentPerfect"
         val buttonExam: Button = findViewById(R.id.presentPSC_practice)
         buttonExam.setBackgroundColor(Color.GREEN)
-        talk.speak("Thank you very much. You should press the next button for the next question." +
-                "your practise session starts now.", TextToSpeech.QUEUE_FLUSH, null)
-        // delay for the finishing of speech
-        Handler().postDelayed({
-            val intent = Intent(this, PractiseActivity::class.java)
-            startActivity(intent)
-        }, 8000)
+        setContentView(R.layout.activity_tenses_structures)
+        talk.speak("Thank you very much, Here you can have a quick look of all the tense structures with an example," +
+                "Please press the start button to start your practice session", TextToSpeech.QUEUE_FLUSH, null)
 
     }
 
@@ -222,13 +218,9 @@ class NameActivity : AppCompatActivity() {
         getData = "PastPerfect"
         val buttonExam: Button = findViewById(R.id.pastPSC_practice)
         buttonExam.setBackgroundColor(Color.GREEN)
-        talk.speak("Thank you very much. You should press the next button for the next question." +
-                "your practise session starts now.", TextToSpeech.QUEUE_FLUSH, null)
-        // delay for the finishing of speech
-        Handler().postDelayed({
-            val intent = Intent(this, PractiseActivity::class.java)
-            startActivity(intent)
-        }, 8000)
+        setContentView(R.layout.activity_tenses_structures)
+        talk.speak("Thank you very much, Here you can have a quick look of all the tense structures with an example," +
+                "Please press the start button to start your practice session", TextToSpeech.QUEUE_FLUSH, null)
 
     }
 
@@ -251,13 +243,9 @@ class NameActivity : AppCompatActivity() {
         getData = "FuturePerfect"
         val buttonExam: Button = findViewById(R.id.futurePSC_practice)
         buttonExam.setBackgroundColor(Color.GREEN)
-        talk.speak("Thank you very much. You should press the next button for the next question." +
-                "your practise session starts now.", TextToSpeech.QUEUE_FLUSH, null)
-        // delay for the finishing of speech
-        Handler().postDelayed({
-            val intent = Intent(this, PractiseActivity::class.java)
-            startActivity(intent)
-        }, 8000)
+        setContentView(R.layout.activity_tenses_structures)
+        talk.speak("Thank you very much, Here you can have a quick look of all the tense structures with an example," +
+                "Please press the start button to start your practice session", TextToSpeech.QUEUE_FLUSH, null)
 
     }
 
